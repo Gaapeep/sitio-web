@@ -51,7 +51,7 @@ header{
 
 
 
-#title{
+h1{
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -63,6 +63,9 @@ header{
     
 }
 
+h2{
+    font-weight: bold;
+}
 
 section h3 {
     text-decoration:underline;
@@ -99,7 +102,9 @@ footer{
 footer ul {
     list-style: none;
 }
-
+footer ul li a {
+    color: #0000EE;
+}
 
 
 /* PAGINA SERVICIOS Y PRODUCTOS*/
