@@ -186,6 +186,9 @@ footer ul li a {
     border-radius: 8px;   
 }
 
+.container img{
+    aspect-ratio: 3/4;
+}
 
 
 
