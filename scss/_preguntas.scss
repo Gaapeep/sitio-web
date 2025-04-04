@@ -1,0 +1,18 @@
+@use 'media';
+  /* PAGINA PREGUNTAS FRECUENTES */
+  /* --------------------------------------------------------------------*/
+#preguntas {
+    h3 {
+        text-align: start;
+  }
+    .content {
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+#preguntas h3, .content {
+    margin-left: 10px;
+  }

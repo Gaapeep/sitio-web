@@ -1,0 +1,33 @@
+@use 'media';
+@use '../scss/utilities/maps' as *;
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    .navbar {
+      background-color: map-get($colores , header-color);
+      border: 1px solid black;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-link:hover {
+      background-color: #a99c91;
+      border-radius: 2px;
+    }
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+      text-decoration: underline;
+      font-style: normal;
+      font-weight: bold;
+      color: map-get($colores , titulo-color);
+      background-color: map-get($colores , header-color);
+    }
+  }
+  
+  

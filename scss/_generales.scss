@@ -1,0 +1,18 @@
+@use 'media';
+@use '../scss/utilities/maps' as *;
+@use '../scss/base/variables' as *;
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+} /* Reset de css por defecto en los navegadores*/
+/* PAGINA PRINCIPAL*/
+/* --------------------------------------------------------------------*/
+body {
+    background-color: map-get($colores , body-color );
+    font-family: $fuente-family;
+    font-weight: 400;
+    font-style: $fuente-estilo;
+    width: 100dvw;
+}

@@ -1,3 +1,46 @@
+/* Media query para Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    box-shadow: 0 0 20px grey;
+  }
+  .manos-pies {
+    display: flex;
+    flex-direction: column;
+  }
+  .manos-pies .container {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    column-gap: 15px;
+  }
+  #servicios-productos {
+    flex-direction: column;
+    row-gap: 2.2rem;
+  }
+}
+/* Media query para celulares*/
+@media (max-width: 480px) {
+  header {
+    box-shadow: 0 0 20px black;
+  }
+  .manos-pies {
+    display: flex;
+    flex-direction: column;
+  }
+  .manos-pies .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #servicios-productos {
+    flex-direction: column;
+    row-gap: 2.2rem;
+  }
+  #formulario {
+    text-align: start;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,25 +62,21 @@ header {
   top: 0px;
   z-index: 100;
 }
-
-.navbar {
+header .navbar {
   background-color: rgb(245, 219, 184);
   border: 1px solid black;
 }
-
-.nav-link {
+header .nav-link {
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 18px;
 }
-
-.nav-link:hover {
+header .nav-link:hover {
   background-color: #a99c91;
   border-radius: 2px;
 }
-
-h1 {
+header h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -81,103 +120,11 @@ footer {
   text-align: center;
   margin-top: 7.5rem;
 }
-
 footer ul {
   list-style: none;
 }
-
 footer ul li a {
   color: #0000EE;
-}
-
-/* PAGINA SERVICIOS Y PRODUCTOS*/
-/* --------------------------------------------------------------------*/
-#servicios-productos {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 4rem;
-}
-
-#servicios-productos .card {
-  text-align: center;
-  padding: 25px;
-  margin: auto;
-  background-color: rgba(245, 219, 184, 0.3);
-  border: 4px solid rgba(255, 219, 184, 0.7);
-  box-shadow: 0px 0px 5px #999;
-  width: 350px;
-}
-
-#servicios-productos h2 {
-  text-align: center;
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-#servicios-productos .card h3 {
-  margin: 0;
-  font-size: 24PX;
-}
-
-.card p {
-  margin: 15px 0px;
-}
-
-/* PAGINA CLIENTES */
-/* --------------------------------------------------------------------*/
-.manos-pies {
-  display: flex;
-  flex-direction: column;
-}
-
-.manos-pies h2 {
-  text-align: center;
-  font-size: 28px;
-  padding: 40px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  width: 85dvw;
-  margin: auto;
-  gap: 20px;
-}
-
-.container .container-manos {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.container .container-pies {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.container img {
-  aspect-ratio: 3/4;
-}
-
-/* PAGINA PREGUNTAS FRECUENTES */
-/* --------------------------------------------------------------------*/
-#preguntas h3 {
-  text-align: start;
-}
-
-#preguntas .content {
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
-  letter-spacing: 1px;
-}
-
-#preguntas h3, .content {
-  margin-left: 10px;
 }
 
 /* PAGINA CONTACTO */
@@ -224,49 +171,81 @@ button:hover {
   padding: 50px;
 }
 
-/* Media query para Tablets*/
-@media (min-width: 481px) and (max-width: 768px) {
-  header {
-    box-shadow: 0 0 20px grey;
-  }
-  .manos-pies {
-    display: flex;
-    flex-direction: column;
-  }
-  .container {
-    grid-template-columns: 1fr 1fr;
-    width: 95%;
-    column-gap: 15px;
-  }
-  #servicios-productos {
-    flex-direction: column;
-    row-gap: 2.2rem;
-  }
+/* PAGINA SERVICIOS Y PRODUCTOS*/
+/* --------------------------------------------------------------------*/
+#servicios-productos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
 }
-/* Media query para celulares*/
-@media (max-width: 480px) {
-  header {
-    box-shadow: 0 0 20px black;
-  }
-  .manos-pies {
-    display: flex;
-    flex-direction: column;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  #servicios-productos {
-    flex-direction: column;
-    row-gap: 2.2rem;
-  }
-  #formulario {
-    text-align: start;
-  }
+#servicios-productos h2 {
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
 }
+#servicios-productos .card {
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  background-color: rgba(245, 219, 184, 0.3);
+  border: 4px solid rgba(255, 219, 184, 0.7);
+  box-shadow: 0px 0px 5px #999;
+  width: 350px;
+}
+#servicios-productos .card h3 {
+  margin: 0;
+  font-size: 24PX;
+}
+#servicios-productos .card p {
+  margin: 15px 0px;
+}
+
+/* PAGINA CLIENTES */
+/* --------------------------------------------------------------------*/
+.manos-pies {
+  display: flex;
+  flex-direction: column;
+}
+.manos-pies h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 40px;
+}
+.manos-pies .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 85dvw;
+  margin: auto;
+  gap: 20px;
+}
+.manos-pies .container .container-manos, .manos-pies .container .container-pies {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.manos-pies .container img {
+  aspect-ratio: 3/4;
+}
+
+/* PAGINA PREGUNTAS FRECUENTES */
+/* --------------------------------------------------------------------*/
+#preguntas h3 {
+  text-align: start;
+}
+#preguntas .content {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+#preguntas h3, .content {
+  margin-left: 10px;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

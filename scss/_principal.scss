@@ -1,0 +1,16 @@
+@use 'media';
+
+#principal .content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+  
+  aside {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }

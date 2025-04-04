@@ -1,0 +1,44 @@
+@use 'media';
+  /* PAGINA CONTACTO */
+  /* --------------------------------------------------------------------*/
+  #contacto h3 {
+    text-align: center;
+    margin: 25px;
+  }
+  
+  #contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #formulario {
+    text-align: justify;
+    
+  }
+  
+  form input, textarea {
+    margin-top: 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.1rem;
+  }
+  
+  #formulario button{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    }
+  button:hover{
+    box-shadow: 0px 0px 10px;
+  }
+  
+  #maps iframe {
+    width: 100%;
+    padding: 50px;
+  }

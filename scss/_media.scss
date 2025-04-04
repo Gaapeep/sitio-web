@@ -1,0 +1,48 @@
+/* Media query para Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+header {
+    box-shadow: 0 0 20px grey;
+    }
+.manos-pies {
+    display: flex;
+    flex-direction: column;
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        column-gap: 15px;
+        }
+    }
+
+#servicios-productos {
+    flex-direction: column;
+    row-gap: 2.2rem;
+    }
+}
+
+/* Media query para celulares*/
+@media (max-width: 480px) {
+
+header {
+    box-shadow: 0 0 20px black;
+    }
+.manos-pies {
+    display: flex;
+    flex-direction: column;
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+#servicios-productos {
+    flex-direction: column;
+    row-gap: 2.2rem;
+    }
+#formulario{
+    text-align: start;
+    }
+}

@@ -1,0 +1,33 @@
+@use'media';
+  /* PAGINA CLIENTES */
+  /* --------------------------------------------------------------------*/
+  .manos-pies {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        padding: 40px;
+      }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 85dvw;
+        margin: auto;
+        gap: 20px;
+        .container-manos {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+          }
+        .container-pies {
+            @extend .container-manos;
+            
+          }
+        img {
+            aspect-ratio: 3/4;
+          }    
+      }  
+  }
