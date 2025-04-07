@@ -156,14 +156,16 @@ form label {
 }
 
 #formulario button {
+  background: linear-gradient(to right, rgb(97, 87, 140), rgb(196, 144, 148), rgb(14, 36, 175), rgb(14, 175, 166), rgb(233, 16, 239), rgb(20, 224, 53), rgb(213, 230, 24), rgb(237, 121, 26), rgb(239, 8, 8));
   display: block;
   margin: 20px auto;
-  padding: 5px 10px;
+  padding: 6px 35px;
   border-radius: 5px;
 }
 
 button:hover {
   box-shadow: 0px 0px 10px;
+  cursor: pointer;
 }
 
 #maps iframe {
@@ -201,6 +203,20 @@ button:hover {
   margin: 15px 0px;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.card-servicio, .card-producto {
+  animation: aparecer 1.5s ease-in-out;
+}
+
 /* PAGINA CLIENTES */
 /* --------------------------------------------------------------------*/
 .manos-pies {
@@ -228,6 +244,12 @@ button:hover {
 }
 .manos-pies .container img {
   aspect-ratio: 3/4;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.73, 0, 0.52, 1);
+}
+.manos-pies .container img:hover {
+  scale: 1.2;
+  box-shadow: 0 0 20px gray;
 }
 
 /* PAGINA PREGUNTAS FRECUENTES */
