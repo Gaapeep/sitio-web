@@ -1,13 +1,12 @@
 /* PAGINA PREGUNTAS FRECUENTES */
 /* --------------------------------------------------------------------*/
 #preguntas {
-  h3 {
-    text-align: start;
-  }
+  max-width: 75dvw;
+  margin: auto;
   .content {
-    max-width: 1000px;
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    text-align: center;
     letter-spacing: 1px;
   }
 }
@@ -15,4 +14,25 @@
 #preguntas h3,
 .content {
   margin-left: 10px;
+}
+
+#carouselManicuria {
+  max-width: 75dvw;
+  margin: 10px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  .carousel-item {
+    &:nth-child(2) {
+      filter: grayscale(15%);
+    }
+    &:last-child {
+      filter: grayscale(40%);
+    }
+  }
 }

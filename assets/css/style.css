@@ -58,12 +58,20 @@ section h3 {
   margin-top: 25px;
 }
 
-#principal .content {
-  max-width: 800px;
+#portada {
+  max-width: 95dvw;
   margin: auto;
-  text-align: center;
-  padding: 10px;
-  letter-spacing: 1px;
+  position: relative;
+}
+#portada img {
+  width: 100%;
+  display: block;
+}
+#portada::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 aside {
@@ -71,6 +79,14 @@ aside {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 50px;
+}
+
+#principal .content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -213,13 +229,14 @@ button:hover {
 
 /* PAGINA PREGUNTAS FRECUENTES */
 /* --------------------------------------------------------------------*/
-#preguntas h3 {
-  text-align: start;
+#preguntas {
+  max-width: 75dvw;
+  margin: auto;
 }
 #preguntas .content {
-  max-width: 1000px;
-  width: 100%;
+  width: 90%;
   padding: 10px;
+  text-align: center;
   letter-spacing: 1px;
 }
 
@@ -228,10 +245,31 @@ button:hover {
   margin-left: 10px;
 }
 
+#carouselManicuria {
+  max-width: 75dvw;
+  margin: 10px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#carouselManicuria img {
+  max-height: 500px;
+  object-fit: cover;
+}
+#carouselManicuria .carousel-item:nth-child(2) {
+  filter: grayscale(15%);
+}
+#carouselManicuria .carousel-item:last-child {
+  filter: grayscale(40%);
+}
+
 /* Media query para Tablets*/
 @media (min-width: 481px) and (max-width: 768px) {
   header {
     box-shadow: 0 0 20px grey;
+  }
+  #carouselManicuria {
+    max-width: 90dvw;
   }
   .manos-pies {
     display: flex;
@@ -247,11 +285,17 @@ button:hover {
     flex-direction: column;
     row-gap: 2.2rem;
   }
+  #preguntas {
+    max-width: 90dvw;
+  }
 }
 /* Media query para celulares*/
 @media (max-width: 480px) {
   header {
     box-shadow: 0 0 20px black;
+  }
+  #carouselManicuria {
+    max-width: 95dvw;
   }
   .manos-pies {
     display: flex;
@@ -264,6 +308,9 @@ button:hover {
   #servicios-productos {
     flex-direction: column;
     row-gap: 2.2rem;
+  }
+  #preguntas {
+    max-width: 95dvw;
   }
   #formulario {
     text-align: start;

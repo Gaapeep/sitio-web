@@ -3,6 +3,9 @@
   header {
     box-shadow: 0 0 20px grey;
   }
+  #carouselManicuria {
+    max-width: 90dvw;
+  }
   .manos-pies {
     display: flex;
     flex-direction: column;
@@ -18,12 +21,18 @@
     flex-direction: column;
     row-gap: 2.2rem;
   }
-}
 
+  #preguntas {
+    max-width: 90dvw;
+  }
+}
 /* Media query para celulares*/
 @media (max-width: 480px) {
   header {
     box-shadow: 0 0 20px black;
+  }
+  #carouselManicuria {
+    max-width: 95dvw;
   }
   .manos-pies {
     display: flex;
@@ -38,6 +47,11 @@
     flex-direction: column;
     row-gap: 2.2rem;
   }
+
+  #preguntas {
+    max-width: 95dvw;
+  }
+
   #formulario {
     text-align: start;
   }
