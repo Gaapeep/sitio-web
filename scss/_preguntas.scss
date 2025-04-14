@@ -1,10 +1,10 @@
-  /* PAGINA PREGUNTAS FRECUENTES */
-  /* --------------------------------------------------------------------*/
+/* PAGINA PREGUNTAS FRECUENTES */
+/* --------------------------------------------------------------------*/
 #preguntas {
-    h3 {
-        text-align: start;
+  h3 {
+    text-align: start;
   }
-    .content {
+  .content {
     max-width: 1000px;
     width: 100%;
     padding: 10px;
@@ -12,6 +12,7 @@
   }
 }
 
-#preguntas h3, .content {
-    margin-left: 10px;
-  }
+#preguntas h3,
+.content {
+  margin-left: 10px;
+}

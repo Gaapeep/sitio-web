@@ -81,7 +81,7 @@ footer ul {
   list-style: none;
 }
 footer ul li a {
-  color: #0000EE;
+  color: #0000ee;
 }
 
 /* PAGINA CONTACTO */
@@ -102,7 +102,8 @@ footer ul li a {
   text-align: justify;
 }
 
-form input, textarea {
+form input,
+textarea {
   margin-top: 20px;
 }
 
@@ -113,7 +114,18 @@ form label {
 }
 
 #formulario button {
-  background: linear-gradient(to right, rgb(97, 87, 140), rgb(196, 144, 148), rgb(14, 36, 175), rgb(14, 175, 166), rgb(233, 16, 239), rgb(20, 224, 53), rgb(213, 230, 24), rgb(237, 121, 26), rgb(239, 8, 8));
+  background: linear-gradient(
+    to right,
+    rgb(97, 87, 140),
+    rgb(196, 144, 148),
+    rgb(14, 36, 175),
+    rgb(14, 175, 166),
+    rgb(233, 16, 239),
+    rgb(20, 224, 53),
+    rgb(213, 230, 24),
+    rgb(237, 121, 26),
+    rgb(239, 8, 8)
+  );
   display: block;
   margin: 20px auto;
   padding: 6px 35px;
@@ -154,7 +166,7 @@ button:hover {
 }
 #servicios-productos .card h3 {
   margin: 0;
-  font-size: 24PX;
+  font-size: 24px;
 }
 #servicios-productos .card p {
   margin: 15px 0px;
@@ -170,7 +182,8 @@ button:hover {
     transform: translateY(0px);
   }
 }
-.card-servicio, .card-producto {
+.card-servicio,
+.card-producto {
   animation: aparecer 1.5s ease-in-out;
 }
 
@@ -194,7 +207,8 @@ button:hover {
   margin: auto;
   gap: 20px;
 }
-.manos-pies .container .container-manos, .manos-pies .container .container-pies {
+.manos-pies .container .container-manos,
+.manos-pies .container .container-pies {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -221,7 +235,8 @@ button:hover {
   letter-spacing: 1px;
 }
 
-#preguntas h3, .content {
+#preguntas h3,
+.content {
   margin-left: 10px;
 }
 
@@ -266,6 +281,5 @@ button:hover {
     text-align: start;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */

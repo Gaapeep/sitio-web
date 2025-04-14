@@ -1,46 +1,56 @@
-  /* PAGINA CONTACTO */
-  /* --------------------------------------------------------------------*/
-  #contacto h3 {
-    text-align: center;
-    margin: 25px;
-  }
-  
-  #contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #formulario {
-    text-align: justify;
-    
-  }
-  
-  form input, textarea {
-    margin-top: 20px;
-  }
-  
-  form label {
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1.1rem;
-  }
-  
-  #formulario button{
-    background: linear-gradient(to right, rgba(97,87,140,255), rgba(196,144,148,255), rgba(14,36,175,255), rgba(14,175,166,255), rgba(233,16,239,252), rgba(20,224,53,255), rgba(213,230,24,255), rgba(237,121,26,255), rgba(239,8,8,62));
-    display: block;
-    margin: 20px auto;
-    padding: 6px 35px;
-    border-radius: 5px;
-        
-    }
-  button:hover{
-    box-shadow: 0px 0px 10px;
-    cursor: pointer;
-  }
-  
-  #maps iframe {
-    width: 100%;
-    padding: 50px;
-  }
+/* PAGINA CONTACTO */
+/* --------------------------------------------------------------------*/
+#contacto h3 {
+  text-align: center;
+  margin: 25px;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario {
+  text-align: justify;
+}
+
+form input,
+textarea {
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+#formulario button {
+  background: linear-gradient(
+    to right,
+    rgba(97, 87, 140, 255),
+    rgba(196, 144, 148, 255),
+    rgba(14, 36, 175, 255),
+    rgba(14, 175, 166, 255),
+    rgba(233, 16, 239, 252),
+    rgba(20, 224, 53, 255),
+    rgba(213, 230, 24, 255),
+    rgba(237, 121, 26, 255),
+    rgba(239, 8, 8, 62)
+  );
+  display: block;
+  margin: 20px auto;
+  padding: 6px 35px;
+  border-radius: 5px;
+}
+button:hover {
+  box-shadow: 0px 0px 10px;
+  cursor: pointer;
+}
+
+#maps iframe {
+  width: 100%;
+  padding: 50px;
+}
