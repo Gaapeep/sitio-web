@@ -1,10 +1,11 @@
+@use "sass:map";
 @use "../scss/utilities/maps" as *;
 header {
   position: sticky;
   top: 0px;
   z-index: 100;
   .navbar {
-    background-color: map-get($colores, header-color);
+    background-color: map.get($colores, header-color);
     border: 1px solid black;
   }
   .nav-link {
@@ -24,7 +25,7 @@ header {
     text-decoration: underline;
     font-style: normal;
     font-weight: bold;
-    color: map-get($colores, titulo-color);
-    background-color: map-get($colores, header-color);
+    color: map.get($colores, titulo-color);
+    background-color: map.get($colores, header-color);
   }
 }

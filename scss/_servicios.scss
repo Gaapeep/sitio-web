@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../scss/utilities/maps" as *;
 /* PAGINA SERVICIOS Y PRODUCTOS*/
 /* --------------------------------------------------------------------*/
@@ -15,8 +16,8 @@
     text-align: center;
     padding: 25px;
     margin: auto;
-    background-color: map-get($colores, card-color);
-    border: 4px solid map-get($colores, card-border-color);
+    background-color: map.get($colores, card-color);
+    border: 4px solid map.get($colores, card-border-color);
     box-shadow: 0px 0px 5px #999;
     width: 350px;
     h3 {

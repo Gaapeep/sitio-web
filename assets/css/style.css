@@ -114,18 +114,7 @@ form label {
 }
 
 #formulario button {
-  background: linear-gradient(
-    to right,
-    rgb(97, 87, 140),
-    rgb(196, 144, 148),
-    rgb(14, 36, 175),
-    rgb(14, 175, 166),
-    rgb(233, 16, 239),
-    rgb(20, 224, 53),
-    rgb(213, 230, 24),
-    rgb(237, 121, 26),
-    rgb(239, 8, 8)
-  );
+  background: linear-gradient(to right, rgb(97, 87, 140), rgb(196, 144, 148), rgb(14, 36, 175), rgb(14, 175, 166), rgb(233, 16, 239), rgb(20, 224, 53), rgb(213, 230, 24), rgb(237, 121, 26), rgb(239, 8, 8));
   display: block;
   margin: 20px auto;
   padding: 6px 35px;
@@ -207,8 +196,7 @@ button:hover {
   margin: auto;
   gap: 20px;
 }
-.manos-pies .container .container-manos,
-.manos-pies .container .container-pies {
+.manos-pies .container .container-manos, .manos-pies .container .container-pies {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -281,5 +269,6 @@ button:hover {
     text-align: start;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */

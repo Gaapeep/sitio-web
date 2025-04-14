@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../scss/utilities/maps" as *;
 @use "../scss/base/variables" as *;
 * {
@@ -9,7 +10,7 @@
 /* PAGINA PRINCIPAL*/
 /* --------------------------------------------------------------------*/
 body {
-  background-color: map-get($colores, body-color);
+  background-color: map.get($colores, body-color);
   font-family: $fuente-family;
   font-weight: 400;
   font-style: $fuente-estilo;
