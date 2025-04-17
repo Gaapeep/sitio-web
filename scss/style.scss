@@ -1,12 +1,12 @@
-@use "generales";
-@use "header";
-@use "titulos";
-@use "principal";
-@use "footer";
-@use "contacto";
-@use "servicios";
-@use "clientes";
-@use "preguntas";
-@use "media";
+@use "layout/generales";
+@use "components/header";
+@use "layout/titulos";
+@use "pages/principal";
+@use "components/footer";
+@use "pages/contacto";
+@use "pages/servicios";
+@use "pages/clientes";
+@use "pages/preguntas";
+@use "layout/media";
 
 /*# sourceMappingURL=style.css.map */
